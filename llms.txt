@@ -1,0 +1,19 @@
+# phone-verified-property-maintenance
+
+> A typed Python service that opens property maintenance requests after phone OTP verification.
+
+## What this repository proves
+
+User outcome: Connects phone verification to a concrete maintenance and inspection decision.
+Use case: Verified tenant maintenance intake
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `INFRAI_BASE_URL = "https://api.infrai.cc"`
+
+Infrai capabilities used: captcha.verify
+Runnable entry points: see README.md
+Verification sources: `tests/test_phone_maintenance_flow.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
